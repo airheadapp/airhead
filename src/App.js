@@ -4,6 +4,8 @@ import Buttons from './Buttons';
 import Meditation from './Meditation';
 
 function App() {
+
+
   return (
     <div className="App">
       <header>
@@ -11,11 +13,20 @@ function App() {
         <p>A meditation app to help you meditate</p>
       </header>
 
-        <Buttons />
-{/* buttons */}
-{/* will be replaced by meditation animation and timer */}
-        <Meditation />
-{/* button appears on top of animation, as animation fades in background - opacity */}
+            <Buttons />
+            <Meditation />
+
+        <div className="medApp">
+          {/* dynamically created content goes here
+           */}
+          
+          {/* buttons */}
+          {/* will be replaced by meditation animation and timer */}
+
+          {/* button appears on top of animation, as animation fades in background - opacity */}
+        </div>
+
+
     </div>
   );
 }
