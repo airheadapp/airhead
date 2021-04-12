@@ -27,16 +27,17 @@ const Buttons = () => {
         <div className="introButtons">
             <h2>take a breath</h2>
             <p>A quote will appear to inspire your meditation. There will be a visual point of focus.</p>
-            <p>Select your preferred time below:</p>
-
-            <button onClick={ () => setClick(!click)} >3 mins</button>
-            
-            {/*{timer === 3 ? <div><Meditation /></div>: <div></div>}
-
-            {/*<button onClick={(props) => { console.log(props);}} timer={5}>5 mins</button>
 
 
-            <button onClick={(props) => { console.log(props);}} timer={10}>10 mins</button>*/}
+
+            <form action="submit">
+                <label htmlFor="selectedTime">Choose your preferred time:</label>
+                <select name="selectedTime" id="selectedTime">
+                    <option value="3">3 minutes</option>
+                    <option value="5">5 minuites</option>
+                    <option value="10">10 minutes</option>
+                </select>
+            </form>
 
         </div>
     )
