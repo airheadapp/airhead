@@ -7,22 +7,30 @@ import BallAnimation from './BallAnimation';
 
 const Meditation = () => {
 
-    // const [click, setClick] = useState(false);
-    // const [meditation, setMeditation] = useState('');
+    const [change, setChange] = useState(0);
+    const [meditation, setMeditation] = useState('');
 
-    // useEffect( () => {
-    //     if (click === true) {
-    //         setMeditation();
-    //     } else {
-    //         setMeditation('');
-    //     }
-    // }, [click])
+    useEffect( () => {
+        
+        if (change === 0) {
+            setMeditation('');
+        } else if (change === 3) {
+            setMeditation(
+            <div>
+                <Quote />
+                <div className="animation"></div>
+            </div>
+            );
+        }
+    }, [])
 
     const timeChooser = (event) => {
-        console.log(event.target.value);
+        setChange(event.target.value);
+
+        console.log(change);
     }
 
-    let medTime = 0;
+
     return(
 
         <div className="medApp">
@@ -40,14 +48,7 @@ const Meditation = () => {
             </form>
                   {/* dynamically created content goes here
                   */}
-                  {
-                    medTime === 3 
-                        ? <div>
-                             <Quote />
-                             <div className="animation"></div>
-                          </div>
-                        : <div></div>
-                  }
+
                   {/* buttons */}
                   {/* will be replaced by meditation animation and timer */}
 
