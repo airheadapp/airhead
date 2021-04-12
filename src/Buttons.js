@@ -16,7 +16,6 @@ const Buttons = () => {
     }, [click])
 
 
-
     // on click of the button: 
     // a new div will appear with the animation
     // firebase will be queried for a random quote
@@ -28,8 +27,6 @@ const Buttons = () => {
             <h2>take a breath</h2>
             <p>A quote will appear to inspire your meditation. There will be a visual point of focus.</p>
 
-
-
             <form action="submit">
                 <label htmlFor="selectedTime">Choose your preferred time:</label>
                 <select name="selectedTime" id="selectedTime">
@@ -38,7 +35,6 @@ const Buttons = () => {
                     <option value="10">10 minutes</option>
                 </select>
             </form>
-
         </div>
     )
 }

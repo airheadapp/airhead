@@ -17,16 +17,7 @@ function App() {
             <Buttons />
             <Meditation />
 
-        <div className="medApp">
-          {/* dynamically created content goes here
-           */}
-          
-          {/* buttons */}
-          {/* will be replaced by meditation animation and timer */}
-
-          {/* button appears on top of animation, as animation fades in background - opacity */}
-        </div>
-
+            
 
     </div>
   );
