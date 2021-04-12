@@ -7,18 +7,22 @@ import BallAnimation from './BallAnimation';
 
 const Meditation = () => {
 
-    const [click, setClick] = useState(false);
-    const [meditation, setMeditation] = useState('');
+    // const [click, setClick] = useState(false);
+    // const [meditation, setMeditation] = useState('');
 
-    useEffect( () => {
-        if (click === true) {
-            setMeditation(<Meditation />);
-        } else {
-            setMeditation('');
-        }
-    }, [click])
+    // useEffect( () => {
+    //     if (click === true) {
+    //         setMeditation();
+    //     } else {
+    //         setMeditation('');
+    //     }
+    // }, [click])
 
-    let medTime = 3;
+    const timeChooser = (event) => {
+        console.log(event.target.value);
+    }
+
+    let medTime = 0;
     return(
 
         <div className="medApp">
@@ -28,7 +32,7 @@ const Meditation = () => {
 
             <form action="submit">
                 <label htmlFor="selectedTime">Choose your preferred time:</label>
-                <select name="selectedTime" id="selectedTime">
+                <select onChange={timeChooser} name="selectedTime" id="selectedTime">
                     <option value="3">3 minutes</option>
                     <option value="5">5 minuites</option>
                     <option value="10">10 minutes</option>
