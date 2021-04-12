@@ -2,6 +2,7 @@
 import './App.css';
 import Buttons from './Buttons';
 import Meditation from './Meditation';
+import { useState } from 'react';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <header>
         <h1>airhead</h1>
-        <p>A meditation app to help you meditate</p>
+        <p>a meditation app to help you meditate</p>
       </header>
 
             <Buttons />
