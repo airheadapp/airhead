@@ -1,6 +1,5 @@
 
 import './App.css';
-import Buttons from './Buttons';
 import Meditation from './Meditation';
 import { useState } from 'react';
 
@@ -14,7 +13,6 @@ function App() {
         <p>a meditation app to help you meditate</p>
       </header>
 
-            <Buttons />
             <Meditation />
 
             
