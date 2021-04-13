@@ -6,8 +6,8 @@ const MedRender = () => {
     return(
         <div>
             <Quote />
-        <BallAnimation />
-        <Reset />
+            <BallAnimation />
+            <Reset />
         </div>
     )
 }
