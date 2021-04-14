@@ -14,21 +14,30 @@ body {
   text-align: center;
 }
 
+h1, 
+h2,
+body,
+button,
+select {
+  font-family: 'Poppins', sans-serif;
+}
+
 h1 {
   font-size: 5rem;
   margin-bottom: 0;
-  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 header {
   margin-bottom: 80px;
-  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
-.buttons {
-  border: 1px solid black;
-  padding: 60px 60px 100px 60px;
+header p {
+  margin-top: 0;
 }
 
 /* Animations */
@@ -58,6 +67,35 @@ footer {
   margin-top: 60px;
   /* height: 100px; */
   padding: 40px;
+}
+
+/* Form Styles */
+button,
+select {
+  padding: 10px;
+  border: none;
+  font-size: .8rem;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  text-align: center;
+}
+
+
+button {
+  background-color: rgb(21, 34, 68);
+  color: white;
+  transition: background .3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: rgb(248, 194, 123);
+}
+
+button:active {
+  color:rgb(21, 34, 68)
 }
 
 
