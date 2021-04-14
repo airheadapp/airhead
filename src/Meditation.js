@@ -3,6 +3,7 @@ import Quote from './Quote';
 import Reset from './Reset';
 import BallAnimation from './BallAnimation';
 import MedRender from './MedRender';
+import Timer from './Timer';
 
 
 
@@ -21,6 +22,7 @@ const Meditation = () => {
 
     const timeChooser = (event) => {
         setChange(event.target.value);
+
         console.log(change);
     }
 
@@ -50,7 +52,7 @@ const Meditation = () => {
                   
                     {
                         change !== 0
-                        ? <MedRender /> 
+                        ? <Timer timeChooser={timeChooser}/> 
                         : <p>please select something</p>
                     }
                   {/* buttons */}

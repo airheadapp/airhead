@@ -2,6 +2,13 @@ html {
   font-size: 125%;
 }
 
+body {
+  background-image: url(./assets/cesar-couto-pC2xOplxsVs-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
 .App {
   text-align: center;
 }
@@ -9,10 +16,13 @@ html {
 h1 {
   font-size: 5rem;
   margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
   margin-bottom: 80px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .buttons {
@@ -37,6 +47,17 @@ header {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+
+/* Footer Styles */
+footer {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+
 @keyframes breathe {
   0% {
       transform: scale(0.25,0.25);
