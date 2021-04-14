@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import MedRender from './MedRender';
 
-
 const Meditation = () => {
     const [userTime, setUserTime] = useState(0);
     const [timer, setTimer] = useState(0);
