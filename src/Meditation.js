@@ -12,6 +12,7 @@ const Meditation = () => {
             (timer - 1), 1000);
         return () => {
             clearInterval(counter)
+            console.log(counter());
         }
         }
     }, [timer])
