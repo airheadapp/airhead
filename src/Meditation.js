@@ -3,6 +3,7 @@ import Quote from './Quote';
 import Reset from './Reset';
 import BallAnimation from './BallAnimation';
 import MedRender from './MedRender';
+import Timer from './Timer';
 
 const Meditation = () => {
     const [change, setChange] = useState('placeholder');
