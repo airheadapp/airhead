@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import MedRender from './MedRender';
+import Reset from './Reset';
 
 const Meditation = () => {
-    const [userTime, setUserTime] = useState(0);
-    const [timer, setTimer] = useState(0);
+    const [userTime, setUserTime] = useState('placeholder');
+    const [timer, setTimer] = useState('placeholder');
 
     useEffect(() => {
-        const counter = () => {
+        const counter =
             timer > 0 &&
         setInterval(() => 
-            (timer - 1), 1000);
+            setTimer(timer - 1), 1000);
         return () => {
-            clearInterval(counter)
-        }
+            clearInterval(counter);
         }
     }, [timer])
 
@@ -39,7 +39,7 @@ const Meditation = () => {
                     name="selectedTime" 
                     id="selectedTime">
 
-                    <option value="0" disabled>choose time</option>
+                    <option value="placeholder" disabled>choose time</option>
                     <option value="3">3 minutes</option>
                     <option value="5">5 minutes</option>
                     <option value="10">10 minutes</option>
@@ -51,18 +51,19 @@ const Meditation = () => {
                   {/* dynamically created content goes here
                   */}
                     {
-                        timer !== 0
-                        ? 
-                        (
-                            <>
-                            <div>
-                                {timer}
-                            </div>
-
-                            <MedRender /> 
-                            </>
+                        //checking the initial condition
+                        timer === 0
+                        ? //is it true or false?
+                        (//this will render if it is true
+                            <Reset />
                         )
-                        : (<p>please select something</p>)
+                        : //this is what happens if it is false - here is where we put a 2ND condition:
+                        timer >= 1
+                        ?//is the 2ND condition true or false?
+                        (<MedRender />)
+                        //this will render if the second condition is true
+                        :
+                        (<p>Please select the time</p>)
                     }
                   {/* buttons */}
                   {/* will be replaced by meditation animation and timer */}
