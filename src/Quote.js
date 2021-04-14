@@ -16,9 +16,10 @@ const Quote = () => {
             for (let key in data) {
                 quoteArray.push(data[key])
             }
+            const newQuoteArray = [...quoteArray]
+            setQuote(newQuoteArray[randomQuote]);
         })
-        const newQuoteArray = [...quoteArray]
-        setQuote(newQuoteArray[randomQuote]);
+        
     },[])
 
     return(
