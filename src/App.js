@@ -1,5 +1,6 @@
 import './App.css';
 import Meditation from './Meditation';
+import Footer from './Footer';
 
 function App() {
   return (
