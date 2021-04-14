@@ -48,7 +48,13 @@ const Meditation = () => {
                   */}
                     {
                         change !== 0
-                        ? (<MedRender /> )
+                        ? 
+                        (
+                            <>
+                            <Timer />
+                            <MedRender /> 
+                            </>
+                        )
                         : (<p>please select something</p>)
                     }
                   {/* buttons */}

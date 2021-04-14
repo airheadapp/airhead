@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-const Timer = () => {
+const Timer = (props) => {
    
     const [timer, setTimer] = useState(60);
 
@@ -13,7 +13,7 @@ const Timer = () => {
             clearInterval(counter)
         }
     }, [timer])
-    //const newTime = props.timeChooser(timer);
+    // const newTime = props.timeChooser(timer);
     return(
         <div>
             {timer}

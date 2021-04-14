@@ -7,6 +7,7 @@ body {
   background-size: cover;
   width: 100%;
   height: auto;
+  color: rgb(21, 34, 68);
 }
 
 .App {
@@ -36,11 +37,11 @@ header {
   display: block;
   height: 200px;
   width: 200px;
-  background-color: tomato;
+  background-color: rgb(248, 194, 123);
   padding: 100px;
   margin: 100px auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 40px tomato;
+  box-shadow: 0px 0px 40px rgb(255, 175, 71);
   animation-duration: 5s;
   animation-name: breathe;
   animation-direction: alternate;
@@ -52,9 +53,11 @@ header {
 /* Footer Styles */
 footer {
   font-family: 'Poppins', sans-serif;
-  background-color: black;
+  background-color: rgb(21, 34, 68);
   color: white;
-  margin: 0;
+  margin-top: 60px;
+  /* height: 100px; */
+  padding: 40px;
 }
 
 
