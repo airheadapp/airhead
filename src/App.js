@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <header>
         <h1>airhead</h1>
-        <p>a meditation app to help you meditate</p>
+        <p>a meditation app to help you clear your head</p>
       </header>
-            <Timer />
+
             <Meditation />
             <Footer />
 
