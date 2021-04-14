@@ -2,8 +2,24 @@ html {
   font-size: 125%;
 }
 
+body {
+  background-image: url(./assets/cesar-couto-pC2xOplxsVs-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: rgb(21, 34, 68);
+}
+
 .App {
   text-align: center;
+}
+
+h1, 
+h2,
+body,
+button,
+select {
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -11,13 +27,17 @@ h1 {
   margin-bottom: 0;
 }
 
-header {
-  margin-bottom: 80px;
+h2 {
+  font-size: 2.5rem;
 }
 
-.buttons {
-  border: 1px solid black;
-  padding: 60px 60px 100px 60px;
+header {
+  margin-bottom: 80px;
+  color: white;
+}
+
+header p {
+  margin-top: 0;
 }
 
 /* Animations */
@@ -26,17 +46,59 @@ header {
   display: block;
   height: 200px;
   width: 200px;
-  background-color: tomato;
+  background-color: rgb(248, 194, 123);
   padding: 100px;
   margin: 100px auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 40px tomato;
+  box-shadow: 0px 0px 40px rgb(255, 175, 71);
   animation-duration: 5s;
   animation-name: breathe;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+
+/* Footer Styles */
+footer {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(21, 34, 68);
+  color: white;
+  margin-top: 60px;
+  /* height: 100px; */
+  padding: 40px;
+}
+
+/* Form Styles */
+button,
+select {
+  padding: 10px;
+  border: none;
+  font-size: .8rem;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  text-align: center;
+}
+
+
+button {
+  background-color: rgb(21, 34, 68);
+  color: white;
+  transition: background .3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: rgb(248, 194, 123);
+}
+
+button:active {
+  color:rgb(21, 34, 68)
+}
+
+
 @keyframes breathe {
   0% {
       transform: scale(0.25,0.25);
