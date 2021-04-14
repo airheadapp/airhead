@@ -39,11 +39,7 @@ const Meditation = () => {
                     name="selectedTime" 
                     id="selectedTime">
 
-<<<<<<< HEAD
-                    <option value="placeholder" disabled>choose time</option>
-=======
                     <option value="0" disabled>choose time</option>
->>>>>>> f8270b3be6ff9a55526e49014db4a1be85471a09
                     <option value="3">3 minutes</option>
                     <option value="5">5 minutes</option>
                     <option value="10">10 minutes</option>
