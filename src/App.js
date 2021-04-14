@@ -1,7 +1,6 @@
 
 import './App.css';
 import Meditation from './Meditation';
-import { useState } from 'react';
 
 function App() {
 

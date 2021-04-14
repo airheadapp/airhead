@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react';
-import Quote from './Quote';
-import Reset from './Reset';
-import BallAnimation from './BallAnimation';
 import MedRender from './MedRender';
-
-
 
 const Meditation = () => {
 
@@ -36,7 +31,6 @@ const Meditation = () => {
                     onChange={timeChooser} 
                     name="selectedTime" 
                     id="selectedTime">
-
 
                     <option value="placeholder" disabled>choose time</option>
                     <option value="3">3 minutes</option>
