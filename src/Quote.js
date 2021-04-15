@@ -24,7 +24,7 @@ const Quote = () => {
 
     return(
         <div> 
-            <p className='quote'>{/*function to obtain the random quote*/}
+            <p className='quote'>{/*here we will obtain the random quote*/}
             {quote}
             </p> 
         </div>
