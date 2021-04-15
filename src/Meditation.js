@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import MedRender from './MedRender';
 
 const Meditation = () => {
+    //Initial useStates to be updated based on user selection
     const [userTime, setUserTime] = useState('placeholder');
     const [timer, setTimer] = useState('placeholder');
 
+    // Create timer for length of meditation
     useEffect(() => {
         const counter =
             timer > 0 &&
@@ -15,6 +17,7 @@ const Meditation = () => {
         }
     }, [timer])
 
+    // On change trigger will obtain the value of the event
     const onChange = (event) => {
         setUserTime(event.target.value);
     }
@@ -27,11 +30,13 @@ const Meditation = () => {
 
     return(
         <div className="medApp">
-            
     
                   {/* dynamically created content goes here
                   */}
                     {
+                        //Initial ternary statement to check timer and render based on timer's state:
+
+
                         //checking the initial condition
                         timer === 0
                         ? //is it true or false?
@@ -68,15 +73,9 @@ const Meditation = () => {
                     onClick={ startMeditation }
                     >start meditation</button>
                     </form>
-
-                    <p>Please select the time</p>
                 </>
                 )
                     }
-                  {/* buttons */}
-                  {/* will be replaced by meditation animation and timer */}
-
-                  {/* button appears on top of animation, as animation fades in background - opacity */}
                 </div>
     )}
 
