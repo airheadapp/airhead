@@ -68,11 +68,11 @@ header p {
   display: block;
   height: 200px;
   width: 200px;
-  background-color: rgb(248, 194, 123);
+  background-color: #E8ddb5;
   padding: 100px;
   margin: 100px auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 40px rgb(255, 175, 71);
+  box-shadow: 0px 0px 40px #E8ddb5;
   animation-duration: 5s;
   animation-name: breathe;
   animation-direction: alternate;
@@ -94,13 +94,15 @@ footer {
   color: white;
   margin: 60px 0 0 0;
   height: 100px;
-  padding: 20px 20px 0 20px;
+  padding: 40px 20px 0 20px;
   position: fixed;
+  width: 100%;
   bottom: 0;
 }
 
 footer p {
   margin: 0;
+  font-size: .8rem;
 }
 
 /* Form Styles */
